@@ -1,0 +1,196 @@
+--- 
+- !ruby/object:UONConnection 
+  c: &id002 !ruby/object:ModelCanvas 
+    destItem: &id003 !ruby/object:UONObject 
+      c: *id002
+      dX: 0
+      dY: 0
+      editor: &id001 !ruby/object:UONEditor 
+        cardItemMenu: !ruby/object:ItemMenu 
+          editor: *id001
+          path: .w00009
+        connectionItemMenu: !ruby/object:SelectionMenu 
+          editor: *id001
+          path: .w00006
+        edTitle: Ruby on Rails UONEditor
+        editorMenu: !ruby/object:EditorMenu 
+          edTitle: Ruby on Rails UONEditor
+          editor: *id001
+          filename: !str 
+            str: /media/ubuntu 9.10 fs/home/tsvi/Ruby Projects/Rails Projects/Red/UONModels/marshal.uon
+            "@encoding": utf-8
+          ftypes: 
+          - - UON files
+            - "*.uon"
+          - - All files
+            - "*"
+          path: .w00002
+        editorState: !ruby/object:UCBase 
+          editor: *id001
+        itemMenu: !ruby/object:ItemMenu 
+          editor: *id001
+          path: .w00004
+        modelCanvas: *id002
+        model_filename: ""
+        path: .
+        primitiveItemMenu: !ruby/object:SelectionMenu 
+          editor: *id001
+          path: .w00011
+        scrollbar: !ruby/object:Tk::Scrollbar 
+          assigned: []
+
+          path: .w00014
+          scroll_proc: !ruby/object:Proc {}
+
+        statusText: !ruby/object:Tk::Text 
+          cmdtbl: []
+
+          path: .w00000
+          tags: {}
+
+      fillcolor: !str 
+        str: green
+        "@encoding": utf-8
+      id: 1
+      itemBindings: 
+      - - Double-1
+        - !ruby/object:Proc {}
+
+      - - ButtonPress-3
+        - !ruby/object:Proc {}
+
+      - - ButtonPress-1
+        - !ruby/object:Proc {}
+
+      - - Motion
+        - !ruby/object:Proc {}
+
+      - - ButtonRelease
+        - !ruby/object:Proc {}
+
+      - - Enter
+        - !ruby/object:Proc {}
+
+      - - Leave
+        - !ruby/object:Proc {}
+
+      parent: *id002
+      path: .w00001
+      selected: false
+      textItem: &id005 !ruby/object:TkcText 
+        c: *id002
+        id: 2
+        parent: *id002
+        path: .w00001
+    editor: *id001
+    eventItem: *id003
+    path: .w00001
+  dX: 0
+  dY: 0
+  dest: !ruby/object:ConnectionTerminus 
+    dot: 
+    editor: *id001
+    farItem: &id004 !ruby/object:UONAction 
+      c: *id002
+      dX: 0
+      dY: 0
+      editor: *id001
+      fillcolor: !str 
+        str: pink
+        "@encoding": utf-8
+      id: 3
+      itemBindings: 
+      - - Double-1
+        - !ruby/object:Proc {}
+
+      - - ButtonPress-3
+        - !ruby/object:Proc {}
+
+      - - ButtonPress-1
+        - !ruby/object:Proc {}
+
+      - - Motion
+        - !ruby/object:Proc {}
+
+      - - ButtonRelease
+        - !ruby/object:Proc {}
+
+      - - Enter
+        - !ruby/object:Proc {}
+
+      - - Leave
+        - !ruby/object:Proc {}
+
+      parent: *id002
+      path: .w00001
+      selected: false
+      textItem: &id006 !ruby/object:TkcText 
+        c: *id002
+        id: 4
+        parent: *id002
+        path: .w00001
+    intersector: !ruby/object:IntersectUONItem 
+      item: *id003
+      lambda: 1.0
+      x0: 240.0
+      x1: 315.0
+      y0: 76.0
+      y1: 126.0
+  destItem: *id003
+  editor: *id001
+  fillcolor: !str 
+    str: black
+    "@encoding": utf-8
+  id: 8
+  itemBindings: 
+  - - Double-1
+    - !ruby/object:Proc {}
+
+  - - ButtonPress-3
+    - !ruby/object:Proc {}
+
+  - - ButtonPress-1
+    - !ruby/object:Proc {}
+
+  - - Motion
+    - !ruby/object:Proc {}
+
+  - - ButtonRelease
+    - !ruby/object:Proc {}
+
+  - - Enter
+    - !ruby/object:Proc {}
+
+  - - Leave
+    - !ruby/object:Proc {}
+
+  parent: *id002
+  path: .w00001
+  selected: false
+  src: !ruby/object:ConnectionTerminus 
+    dot: 
+    editor: *id001
+    farItem: *id003
+    intersector: !ruby/object:IntersectUONItem 
+      item: *id004
+      lambda: 1.0
+      x0: 47.0
+      x1: 155.0
+      y0: 71.0
+      y1: 102.0
+  srcItem: *id004
+  textItem: &id007 !ruby/object:TkcText 
+    c: *id002
+    id: 9
+    parent: *id002
+    path: .w00001
+- *id003
+- *id005
+- *id004
+- *id006
+- !ruby/object:TkcText 
+  c: *id002
+  id: 6
+  parent: *id002
+  path: .w00001
+- *id007

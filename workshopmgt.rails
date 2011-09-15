@@ -1,0 +1,11 @@
+rails new workshopmgt
+cd workshopmgt
+rake db:create
+rails generate scaffold WorkShopOffering startdate:datetime enddate:datetime seminar:references
+rails generate scaffold Registration workshopoffering:references evaluation:references person:references
+rails generate scaffold Seminar description:text title:string
+rails generate scaffold AbleToTeach teaching_abilities:text seminar:references person:references
+rails generate scaffold CoTeach workshopoffering:references abletoteach:references
+rails generate scaffold Evaluation
+rails generate scaffold Person name:string
+rake db:migrate
